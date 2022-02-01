@@ -43,18 +43,21 @@ public class Main {
             System.out.println("Choose an option");
 
             System.out.println("""
-                    
+                    0: Exit program
                     1: See assignment 01 - ArrayList
                     2: See assignment 02 - Book
                     3: See assignment 03 - Cut grass
                     4: see assignment 04 - Create Square
                     5: see assignment 05 - Manipulate String
                     6: see assignment 06 - Sort by first letter
+                    7: see assignment 07 - Search array for word
                     """);
             checkInput = input.nextInt();
 
 
             switch (checkInput) {
+                case 0:
+                    isRunning = false;
                 case 1:
                     //assignment 01
                     Assign01_ArrayList assign01 = new Assign01_ArrayList();
